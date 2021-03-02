@@ -30,7 +30,7 @@ RootConfigManager configManager = DynamicConfigurationManager.get(this); // Inst
 
 ConfigNode<Double> decimal_node = configManager.manage("test_double", 20.0); // Define a key and a default value
 ConfigNode<String> string_node = configManager.manage("test_string", "testing123"); // Define a key and a default value
-ConfigNode<List<Integer>> list_integer_node = configManager.manage("test_list_integer", Arrays.asList(1, 2, 10)); // Define a key and a default value
+ConfigNode<List<Integer>> list_integer_node = configManager.manage("test_list_integer", Lists.newArrayList(1, 2, 10)); // Define a key and a default value
 
 SubConfigNode subNode = configManager.manageSubNode("test_subnode");
 ConfigNode<Float> float_node = subNode.manage("test_float", 10.0f); // Define a key and a default value
