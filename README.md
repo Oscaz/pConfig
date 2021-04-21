@@ -13,7 +13,7 @@ However you may also register your own object types, simply using the Bukkit API
 
 Installation
 -------
-Simply clone this repository, install it using maven using `clean install`, and shade it into your project.
+Simply clone this repository, install it using maven using `mvn clean install`, and shade it into your project.
 ```xml
 <dependency>
     <groupId>dev.oscaz</groupId>
